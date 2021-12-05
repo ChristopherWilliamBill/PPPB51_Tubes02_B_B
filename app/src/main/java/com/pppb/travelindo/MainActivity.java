@@ -23,5 +23,8 @@ public class MainActivity extends AppCompatActivity {
         //BRI
         //ANDA
 
+        //PU
+        //TRA
+
     }
 }

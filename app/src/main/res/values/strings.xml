@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Travelindo</string>
+    <string name="app_name">TRAVELINDO</string>
+    <string name="login">Log In</string>
 </resources>

@@ -2,137 +2,137 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="@dimen/size30">
 
-    <TextView
-        android:id="@+id/tv_pembyrn_title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pembayaran"
-        android:textSize="40sp"
-        android:paddingBottom="15sp"
-        android:paddingTop="15sp"/>
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:textSize="@dimen/size30"
+            android:layout_marginBottom="@dimen/size10"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/size10">
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Asal"
+                    android:textSize="@dimen/size25"/>
 
-    <TextView
-        android:id="@+id/tv_title_asal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Asal"
-        android:textSize="25sp"
-        android:layout_below="@+id/tv_pembyrn_title"
-        android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bandung"
+                    android:textSize="@dimen/size20"
+                    android:id="@+id/kotaAsal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tujuan"
+                    android:textSize="@dimen/size25"/>
 
-    <TextView
-        android:id="@+id/tv_title_tujuan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tujuan"
-        android:textSize="25sp"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/tv_pembyrn_title"
-        android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jakarta"
+                    android:textSize="@dimen/size20"
+                    android:id="@+id/kotaTujuan"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/size10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textSize="@dimen/size25"/>
 
-    <TextView
-        android:id="@+id/tv_asal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="cityA"
-        android:textSize="37sp"
-        android:layout_below="@+id/tv_title_asal"
-        android:textColor="@color/textColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2/12/2021"
+                android:textSize="@dimen/size20"
+                android:id="@+id/tanggal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/size10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jam"
+                android:textSize="@dimen/size25"/>
 
-    <TextView
-        android:id="@+id/tv_tujuan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="cityB"
-        android:textSize="37sp"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/tv_title_tujuan"
-        android:textColor="@color/textColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10:00"
+                android:textSize="@dimen/size20"
+                android:id="@+id/jam"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/size10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Kursi"
+                android:textSize="@dimen/size25"/>
 
-    <TextView
-        android:id="@+id/tv_title_tanggal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tanggal"
-        android:textSize="25sp"
-        android:layout_below="@+id/tv_asal"
-        android:paddingTop="20sp"
-        android:textColor="@color/textColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3, 5"
+                android:textSize="@dimen/size20"
+                android:id="@+id/nomorKursi"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/size10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="@dimen/size25"/>
 
-    <TextView
-        android:id="@+id/tv_tanggal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="dd/mm/yyyy"
-        android:textSize="37sp"
-        android:layout_below="@+id/tv_title_tanggal"
-        android:textColor="@color/textColor"/>
-
-    <TextView
-        android:id="@+id/tv_title_jam"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Jam"
-        android:textSize="25sp"
-        android:layout_below="@+id/tv_tanggal"
-        android:paddingTop="20sp"
-        android:textColor="@color/textColor"/>
-
-    <TextView
-        android:id="@+id/tv_jam"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="hh : mm"
-        android:textSize="37sp"
-        android:layout_below="@+id/tv_title_jam"
-        android:textColor="@color/textColor"/>
-
-    <TextView
-        android:id="@+id/tv_title_seat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Seat"
-        android:textSize="25sp"
-        android:layout_below="@+id/tv_jam"
-        android:paddingTop="20sp"
-        android:textColor="@color/textColor"/>
-
-    <TextView
-        android:id="@+id/tv_seat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="s1,s2,..,sn"
-        android:textSize="37sp"
-        android:layout_below="@+id/tv_title_seat"
-        android:textColor="@color/textColor"/>
-
-    <TextView
-        android:id="@+id/tv_title_total"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Total"
-        android:textSize="25sp"
-        android:layout_below="@+id/tv_seat"
-        android:paddingTop="20sp"
-        android:textColor="@color/textColor"/>
-
-    <TextView
-        android:id="@+id/tv_total"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rp.xxx.xxx"
-        android:textSize="37sp"
-        android:layout_below="@+id/tv_title_total"
-        android:textColor="@color/textColor"/>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp 200.000"
+                android:textSize="@dimen/size20"
+                android:id="@+id/total"/>
+        </LinearLayout>
+    </LinearLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/theme"
         android:text="Bayar"
-        android:textSize="25sp"/>
-
+        android:id="@+id/btnBayar"
+        android:backgroundTint="@color/theme"/>
 </RelativeLayout>

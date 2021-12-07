@@ -4,4 +4,11 @@
     <string name="openDrawer">open</string>
     <string name="closeDrawer">close</string>
 
+    <!--Array Kota-->
+    <string-array name="array_kota">
+        <item>Bandung</item>
+        <item>Jakarta</item>
+        <item>Tangerang</item>
+        <item>Bogor</item>
+    </string-array>
 </resources>

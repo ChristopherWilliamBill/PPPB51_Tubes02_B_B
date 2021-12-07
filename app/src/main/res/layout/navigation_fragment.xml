@@ -15,14 +15,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnHome"
-            android:text="Home">
+            android:text="Home"
+            android:backgroundTint="@color/theme">
         </Button>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnHistori"
-            android:text="Histori">
+            android:id="@+id/btnHistory"
+            android:text="History"
+            android:backgroundTint="@color/theme">
         </Button>
     </LinearLayout>
 

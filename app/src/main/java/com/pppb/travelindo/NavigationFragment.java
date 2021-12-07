@@ -28,7 +28,7 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
         this.binding = NavigationFragmentBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
         binding.btnHome.setOnClickListener(this);
-        binding.btnHistori.setOnClickListener(this);
+        binding.btnHistory.setOnClickListener(this);
 
         return view;
     }

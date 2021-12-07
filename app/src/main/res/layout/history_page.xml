@@ -8,8 +8,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Histori"
-        android:textSize="40sp"/>
+        android:text="History"
+        android:textSize="@dimen/size30"
+        android:layout_margin="@dimen/size30"/>
 
     <ListView
         android:id="@+id/lv_histori"

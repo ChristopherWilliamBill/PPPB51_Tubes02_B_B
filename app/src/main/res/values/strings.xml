@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TRAVELINDO</string>
     <string name="login">Log In</string>
+    <string name="openDrawer">open</string>
+    <string name="closeDrawer">close</string>
+
 </resources>

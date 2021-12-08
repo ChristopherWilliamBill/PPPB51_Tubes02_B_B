@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="theme">#FF414E7A</color>
     <color name="textColor">#FF6071A0</color>
+    <color name="dipencet">#FF9800</color>
+    <color name="tidakDipencet">#EDC283</color>
+    <color name="terisi">#FA6459</color>
+    <color name="dipilih">#FFE500</color>
+    <color name="kosong">#FFFFFF</color>
 </resources>

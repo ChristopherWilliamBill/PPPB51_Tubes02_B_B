@@ -26,6 +26,14 @@
             android:text="History"
             android:backgroundTint="@color/theme">
         </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExit"
+            android:text="Exit"
+            android:backgroundTint="@color/theme">
+        </Button>
     </LinearLayout>
 
 </FrameLayout>

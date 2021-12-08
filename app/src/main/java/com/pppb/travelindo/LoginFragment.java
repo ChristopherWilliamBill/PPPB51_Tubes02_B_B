@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.pppb.travelindo.databinding.LoginFragmentBinding;
 
@@ -19,6 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class LoginFragment extends Fragment implements View.OnClickListener{
     private LoginFragmentBinding binding;
     private TravelAPI travelAPI;
+    private String token;
 
     public LoginFragment(){
         Retrofit retrofit = new Retrofit.Builder()
@@ -46,8 +48,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
     }
 
     private void doLogIn(){
-        User user = new User(this.binding.etUsername.getText().toString(), this.binding.etPassword.getText().toString());
-
         Call<User> call = travelAPI.logIn(this.binding.etUsername.getText().toString(), this.binding.etPassword.getText().toString());
         call.enqueue(new Callback<User>() {
             @Override
@@ -58,6 +58,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
                 User userResponse = response.body();
                 Log.d("Response", userResponse.getToken());
+                token = userResponse.getToken();
             }
 
             @Override
@@ -71,6 +72,15 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
         if(view == this.binding.btnLogin){
             this.doLogIn();
+            FragmentManager fragmentManager = this.getParentFragmentManager();
+            Bundle result = new Bundle();
+            result.putString("token", this.token);
+            result.putString("username", this.binding.etUsername.getText().toString());
+            fragmentManager.setFragmentResult("setToken", result);
+
+            Bundle result2 = new Bundle();
+            result2.putInt("page", 1);
+            fragmentManager.setFragmentResult("changePage", result2);
         }
     }
 }

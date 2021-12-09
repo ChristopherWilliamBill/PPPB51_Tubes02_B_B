@@ -65,5 +65,5 @@ public class HomeActivity extends AppCompatActivity {
         ft.commit();
     }
 
-    //test commit di gitlab
+    //test commit di gitlab lagi
 }
